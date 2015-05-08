@@ -75,19 +75,21 @@ body{
 .title-wrap{
 	border-bottom: 1px solid #ccc;
 }
-.page-title, .inner-title{
+.page-title, .inner-title, .project-title{
 	font-size: 2em;
 	font-weight: 100;
 	padding: 0;
 	margin: 0 0 15px 0;
 	line-height: 1;
+	display: inline-block;
 }
 .inner-title{
 	font-size: 1.5em;
 }
 .project-title{
-	display: inline-block;
+	font-size: 2.5em;
 }
+
 .btn-projects{
 	float: right;
 	margin: 0;
@@ -149,13 +151,43 @@ body{
 	}
 }
 
-.right-container{
+.float-right{
 	float: right;
 }
 
 .column-right-wrap{
 	padding: 0 0 0 2.5%;
 }
+
+
+/*User Persona Wrap*/
+
+.user-persona-wrap{
+	padding: 20px 0 0 0;
+	img{
+		width: 150px;
+		height: 150px;
+		border-radius: 5px;
+		border: 1px solid #000;
+		float: left;
+	}
+	.user-name{
+		float: left;
+		padding: 0 0 0 10px;
+		font-weight: 100;
+		font-size: 2em;
+	}
+}
+.user-persona-data{
+	clear: both;
+	font-size: 1.5em;
+	padding: 25px 0 0;
+	font-weight: 100;
+	.row{
+		padding: 5px 0;
+	}
+}
+
 
 
 /* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
