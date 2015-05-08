@@ -1,3 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,400);
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -12,6 +18,52 @@
     width: 50px;
   }
 }
+.header{
+	padding: 10px;
+	margin: 0 0 10px 0;
+	background: #ccc;
+	line-height: 1;
+	p{
+		margin: 0;
+		padding: 0;
+		span{
+			font-size: 3em;
+		}
+	} 
+}
+
+/* Nav Styles */
+
+.side-navbar{
+	border-right: 1px solid #ccc;
+	ul li{
+		a{
+			padding: 0 0 10px 0;
+			text-align: center;
+			position: relative;
+			&:focus,&:hover,&:active{
+				background: none;
+				&:after{
+					content: "";
+					position: absolute;
+					width: 80%;
+					height: 2px;
+					background: #ccc;
+					left: 10%;
+				}
+			}
+		}
+		img{
+			width: 25%;
+			height: auto;
+		}
+		span{
+			display: block;
+		}
+	} 
+}
+
+
 
 /* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
    all your less files automatically */
