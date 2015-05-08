@@ -1,14 +1,54 @@
 <nav class="navbar navbar-static-top" ng-controller="NavbarCtrl">
     <div class="collapse navbar-collapse sidebar-navbar-collapse side-navbar" id="bs-example-navbar-collapse-6">
       <ul class="nav navbar-nav">
-        <li title="Home"><a ng-href="#"><img src="/assets/images/home.png" alt=""><span>Home</span></a></li>
-        <li title="Project Overview"><a ng-href="#"><img src="/assets/images/overview.png" alt=""><span>Overview</span></a></li>
-        <li title="User Personas"><a ng-href="#"><img src="/assets/images/persona.png" alt=""><span>Personas</span></a></li>
-        <li title="Information Architecture"><a ng-href="#"><img src="/assets/images/infoarchitecture.png" alt=""><span>Architecture</span></a></li>
-        <li title="Wireframes"><a ng-href="#"><img src="/assets/images/wireframes.png" alt=""><span>Wireframes</span></a></li>
-        <li title="Visual Designs"><a ng-href="#"><img src="/assets/images/designs.png" alt=""><span>Visuals</span></a></li>
-        <li title="Style Guide"><a ng-href="#"><img src="/assets/images/rules.png" alt=""><span>Styles</span></a></li>
-        <li title="Assets"><a ng-href="#"><img src="/assets/images/assets.png" alt=""><span>Assets</span></a></li>
+        <li title="Home">
+            <a ng-href="#/">
+                <img src="/assets/images/home.png" alt=""/>
+                <span>Home</span>
+            </a>
+        </li>
+        <li title="Project Overview">
+            <a ng-href="#/project/{{currentProject}}">
+                <img src="/assets/images/overview.png" alt="">
+                <span>Overview</span>
+            </a>
+        </li>
+        <li title="User Personas">
+            <a ng-href="#/project/{{currentProject}}/personas">
+                <img src="/assets/images/persona.png" alt="">
+                <span>Personas</span>
+            </a>
+        </li>
+        <li title="Information Architecture">
+            <a ng-href="#/project/{{currentProject}}/information-architecture">
+                <img src="/assets/images/infoarchitecture.png" alt="">
+                <span>Architecture</span>
+            </a>
+        </li>
+        <li title="Wireframes">
+            <a ng-href="#/project/{{currentProject}}/wireframes">
+                <img src="/assets/images/wireframes.png" alt="">
+                <span>Wireframes</span>
+            </a>
+        </li>
+        <li title="Visual Designs">
+            <a ng-href="#/project/{{currentProject}}/visual-designs">
+                <img src="/assets/images/designs.png" alt="">
+                <span>Visuals</span>
+            </a>
+        </li>
+        <li title="Style Guide">
+            <a ng-href="#/project/{{currentProject}}/style-guide">
+                <img src="/assets/images/rules.png" alt="">
+                <span>Styles</span>
+            </a>
+        </li>
+        <li title="Assets">
+            <a ng-href="#/project/{{currentProject}}/assets">
+                <img src="/assets/images/assets.png" alt="">
+                <span>Assets</span>
+            </a>
+        </li>
       </ul>
-    </div>    
+    </div>
 </nav>
