@@ -3,7 +3,13 @@
 body{
 	font-family: 'Roboto', sans-serif;
 }
-
+.main-wrapper{
+	width: 100%;
+	padding: 0;
+}
+.inner-wrapper{
+	width: 95%;
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -21,7 +27,7 @@ body{
 .header{
 	padding: 10px;
 	margin: 0 0 10px 0;
-	background: #ccc;
+	background: #e6e6e6;
 	line-height: 1;
 	p{
 		margin: 0;
@@ -41,6 +47,7 @@ body{
 			padding: 0 0 10px 0;
 			text-align: center;
 			position: relative;
+			font-weight: 100;
 			&:focus,&:hover,&:active{
 				background: none;
 				&:after{
@@ -63,6 +70,92 @@ body{
 	} 
 }
 
+/* Common Styles */
+
+.title-wrap{
+	border-bottom: 1px solid #ccc;
+}
+.page-title, .inner-title{
+	font-size: 2em;
+	font-weight: 100;
+	padding: 6px 0 0 0;
+	margin: 0 0 10px 0;
+	line-height: 1;
+}
+.inner-title{
+	font-size: 1.5em;
+}
+.project-title{
+	display: inline-block;
+}
+.btn-projects{
+	float: right;
+	margin: 0;
+	.btn{
+		border: none;
+		font-weight: 100;
+		font-size: 1.2em;
+	}
+	.btn.active{
+		background: #ed1e79;
+		color:#fff;
+		box-shadow: none;
+	}
+	.btn{
+		background: #e6e6e6;
+		color: #1a1a1a;
+	}
+}
+
+.ongoing-projects, .completed-projects{
+	margin: 10px 0;
+	padding: 0;
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li{
+			width: 40%;
+			min-height: 70px;
+			background: #f2f2f2;
+			float: left;
+			margin: 10px 10% 10px 0;
+			-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+			-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+			box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+			border-radius: 5px;
+			a{
+				padding: 5px 10px;
+				display: block;
+				font-weight: 100;
+				text-decoration: none;
+				color: #000;
+				font-size: 1.25em;
+			}
+		}
+	}
+}
+
+.ongoing-projects{
+	border-right: 1px solid #ccc;
+}
+
+.completed-projects{
+	.inner-title{
+		padding: 0 0 0 10%;
+	}
+	ul li{
+		margin: 10px 0 10px 10%;
+	}
+}
+
+.right-container{
+	float: right;
+}
+
+.column-right-wrap{
+	padding: 0 0 0 2.5%;
+}
 
 
 /* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
