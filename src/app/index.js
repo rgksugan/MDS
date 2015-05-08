@@ -25,15 +25,15 @@ angular.module('fdsfrontEnd', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize'
         controller: 'WireframeCtrl'
       })
       .when('/project/:id/visual-designs', {
-        templateUrl: 'app/main/visual-designs.html',
+        templateUrl: 'app/visual-designs/visual-designs.html',
         controller: 'MainCtrl'
       })
       .when('/project/:id/style-guide', {
-        templateUrl: 'app/main/style-guide.html',
+        templateUrl: 'app/style-guide/style-guide.html',
         controller: 'MainCtrl'
       })
       .when('/project/:id/assets', {
-        templateUrl: 'app/main/assets.html',
+        templateUrl: 'app/assets/assets.html',
         controller: 'MainCtrl'
       })
       .otherwise({
