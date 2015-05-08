@@ -9,7 +9,7 @@ angular.module('fdsfrontEnd', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize'
       })
       .when('/project/:id', {
         templateUrl: 'app/project-overview/project-overview.html',
-        controller: 'MainCtrl'
+        controller: 'ProjectOverviewCtrl'
       })
       .when('/project/:id/personas', {
         templateUrl: 'app/personas/personas.html',
