@@ -1,3 +1,23 @@
-<ul>
-  <li ng-repeat="project in projects track by $index"><a ng-href="/#/project/{{project.id}}">{{project.name}}</a></li>
-</ul>
+<div class="row projects">
+	<div class="title-wrap">
+		<p class="project-title page-title">Projects</p>
+		<div class="btn-group btn-projects">
+	        <label class="btn btn-primary" ng-model="radioModel" btn-radio="'Left'">My Projects</label>
+	        <label class="btn btn-primary" ng-model="radioModel" btn-radio="'Middle'">All Projects</label>
+	    </div>
+	</div>
+	<div class="col-sm-6 ongoing-projects">
+		<p class="inner-title">OnGoing</p>
+		<ul>
+		  <li ng-repeat="project in projects track by $index"><a ng-href="/#/project/{{project.id}}">{{project.name}}</a></li>
+		</ul>	
+	</div>
+	<div class="col-sm-6 completed-projects">
+		<div class="right-container">
+			<p class="inner-title">Completed</p>
+			<ul>
+			  <li ng-repeat="project in projects track by $index"><a ng-href="/#/project/{{project.id}}">{{project.name}}</a></li>
+			</ul>
+		</div>	
+	</div>
+</div>
