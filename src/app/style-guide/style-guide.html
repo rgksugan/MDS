@@ -4,12 +4,15 @@
     <p class="project-title float-right">{{project.name}}</p>
   </div>
 
-  <div class="row">
+  <div class="row color-palette">
     <h3>Color Palette</h3>
-    <div class="row">
-      <div class="col-md-4" ng-repeat="color in colors track by $index">
-        {{color.code}}
-        {{color.description}}
+    <div class="row color-code">
+      <div class="col-md-4 color-main-wrap" ng-repeat="color in colors track by $index">
+        <div class="color-wrap" style="background-color:{{color.code}};"></div>
+        <div class="color-data">
+          <span>{{color.code}}</span>
+          <span>{{color.description}}</span>
+        </div>        
       </div>
     </div>
     <h3>Fonts</h3>
