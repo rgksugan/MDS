@@ -14,4 +14,6 @@ angular.module('fdsfrontEnd')
     $scope.setProject = function (projectId) {
       localStorage.setItem('project', projectId);
     };
+
+    $scope.radioModel = 'Left';
   });
