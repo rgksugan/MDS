@@ -1,1 +1,33 @@
-Hello
+<div class="title-wrap row">
+  <p class="page-title">Project Overview</p>
+  <p class="project-title float-right">{{project.name}}</p>
+</div>
+
+<div class="description row">
+  <h3>Descrption</h3>
+  <p>{{project.description}}</p>
+</div>
+
+<div class="dates row">
+  <div class="col-md-4">
+    <div class="title">Start Date</div>
+    <div class="value">{{project.start_date | date}}</div>
+  </div>
+  <div class="col-md-4">
+    <div class="title">Duration</div>
+    <div class="value">3 Weeks</div>
+  </div>
+  <div class="col-md-4">
+    <div class="title">End Date</div>
+    <div class="value">{{project.end_date | date}}</div>
+  </div>
+</div>
+
+<div class="team row">
+  <h3>Team</h3>
+  <div class="col-md-4" ng-repeat="user in project.user track by $index">
+    <img src=""/>
+    <div class="name">{{user.name}}</div>
+    <div class="designation">{{user.designation}}</div>
+  </div>
+</div>

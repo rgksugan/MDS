@@ -3,6 +3,7 @@
 body{
 	font-family: 'Roboto', sans-serif;
 }
+
 .main-wrapper{
 	width: 100%;
 	padding: 0;
@@ -24,18 +25,33 @@ body{
     width: 50px;
   }
 }
-.header{
-	padding: 10px;
+.header {
+	padding: 0 30px;
 	margin: 0 0 10px 0;
 	background: #e6e6e6;
-	line-height: 1;
-	p{
+	height: 80px;
+	line-height: 80px;
+	h1 {
+		font-size: 30px;
+		line-height: 80px;
 		margin: 0;
 		padding: 0;
-		span{
-			font-size: 3em;
+	}
+	a {
+		color: #ED1E79;
+		display: inline-block;
+		text-decoration: none;
+		span {
+			color: #002960;
 		}
-	} 
+		&:hover, &:focus {
+			color: #ED1E79;
+			text-decoration: none;
+			span {
+				color: #002960;
+			}
+		}
+	}
 }
 
 /* Nav Styles */
@@ -44,7 +60,7 @@ body{
 	border-right: 1px solid #ccc;
 	ul li{
 		a{
-			padding: 0 0 10px 0;
+			padding: 10px 0 10px 0;
 			text-align: center;
 			position: relative;
 			font-weight: 100;
@@ -67,16 +83,54 @@ body{
 		span{
 			display: block;
 		}
-	} 
+	}
+}
+
+.description, .team {
+	h3 {
+		color: #ED1E79;
+		font-size: 22px;
+		font-weight: 400;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 200;
+	}
+}
+
+.dates {
+	margin-top: 100px;
+	.title {
+		font-size: 16px;
+		font-weight: 200;
+	}
+	.value {
+		font-size: 22px;
+		font-weight: 200;
+	}
+}
+
+.team {
+	font-size: 16px;
+	margin-top: 80px;
+	.user {
+		display: block;
+		font-weight: 200px;
+	}
+	.designation {
+		display: block;
+		font-weight: 100px;
+	}
 }
 
 /* Common Styles */
 
 .title-wrap{
 	border-bottom: 1px solid #ccc;
+	margin-top: 15px;
 }
 .page-title, .inner-title, .project-title{
-	font-size: 2em;
+	font-size: 32px;
 	font-weight: 100;
 	padding: 0;
 	margin: 0 0 15px 0;
@@ -87,7 +141,7 @@ body{
 	font-size: 1.5em;
 }
 .project-title{
-	font-size: 2.5em;
+	font-size: 36px;
 }
 
 .btn-projects{
@@ -125,7 +179,7 @@ body{
 			-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
 			-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
 			box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
-			border-radius: 5px;
+			border-radius: 1px;
 			a{
 				padding: 5px 10px;
 				display: block;
@@ -133,6 +187,7 @@ body{
 				text-decoration: none;
 				color: #000;
 				font-size: 1.25em;
+				line-height: 70px;
 			}
 		}
 	}
@@ -159,10 +214,38 @@ body{
 	padding: 0 0 0 2.5%;
 }
 
+.persona-wrap {
+	h2 {
+		color: #ED1E79;
+		font-size: 22px;
+		font-weight: 400;
+	}
+	.title {
+		font-size: 12px;
+		font-weight: 200;
+		margin-bottom: 24px;
+	}
+	.value {
+		font-size: 12px;
+		font-weight: 400;
+		margin-bottom: 24px;
+	}
+	.description {
+		padding-top: 10px;
+	}
+}
+
 
 /*User Persona Wrap*/
 
 .user-persona-wrap{
+	margin-bottom: 30px;
+	h2 {
+		color: #ED1E79;
+		font-size: 22px;
+		font-weight: 400;
+		margin-left: 15px;
+	}
 	padding: 20px 0 0 0;
 	img{
 		width: 150px;
@@ -170,6 +253,25 @@ body{
 		border-radius: 5px;
 		border: 1px solid #000;
 		float: left;
+		margin-right: 25px;
+	}
+	.name {
+		font-size: 26px;
+		font-weight: 400;
+	}
+	.age {
+		font-size: 18px;
+		font-weight: 200;
+	}
+	.title {
+		font-size: 12px;
+		font-weight: 200;
+		margin-bottom: 35px;
+	}
+	.value {
+		font-size: 12px;
+		font-weight: 400;
+		margin-bottom: 35px;
 	}
 	.user-name{
 		float: left;

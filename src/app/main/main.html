@@ -9,14 +9,18 @@
 	<div class="col-sm-6 ongoing-projects">
 		<p class="inner-title">OnGoing</p>
 		<ul>
-		  <li ng-repeat="project in projects track by $index"><a ng-href="/#/project/{{project.id}}" ng-click="setProject(project.id)">{{project.name}}</a></li>
+		  <li ng-repeat="project in onGoingProjects track by $index">
+		  	<a ng-href="/#/project/{{project.id}}" ng-click="setProject(project.id)">{{project.name}}</a>
+		 	</li>
 		</ul>
 	</div>
 	<div class="col-sm-6 completed-projects">
-		<div class="float-right">
+		<div>
 			<p class="inner-title">Completed</p>
 			<ul>
-			  <li ng-repeat="project in projects track by $index"><a ng-href="/#/project/{{project.id}}" ng-click="setProject(project.id)">{{project.name}}</a></li>
+			  <li ng-repeat="project in completedProjects track by $index">
+			  	<a ng-href="/#/project/{{project.id}}" ng-click="setProject(project.id)">{{project.name}}</a>
+			 	</li>
 			</ul>
 		</div>
 	</div>

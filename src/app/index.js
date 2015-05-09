@@ -14,11 +14,11 @@ angular.module('fdsfrontEnd', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize'
       })
       .when('/project/:id/personas', {
         templateUrl: 'app/personas/personas.html',
-        controller: 'MainCtrl'
+        controller: 'PersonaCtrl'
       })
       .when('/project/:id/information-architecture', {
         templateUrl: 'app/information-architecture/information-architecture.html',
-        controller: 'MainCtrl'
+        controller: 'ArchitectureCtrl'
       })
       .when('/project/:id/wireframes', {
         templateUrl: 'app/wireframes/wireframes.html',
@@ -26,22 +26,19 @@ angular.module('fdsfrontEnd', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize'
       })
       .when('/project/:id/visual-designs', {
         templateUrl: 'app/visual-designs/visual-designs.html',
-        controller: 'MainCtrl'
+        controller: 'VisualDesignCtrl'
       })
       .when('/project/:id/style-guide', {
         templateUrl: 'app/style-guide/style-guide.html',
-        controller: 'MainCtrl'
+        controller: 'StyleGuideCtrl'
       })
       .when('/project/:id/assets', {
         templateUrl: 'app/assets/assets.html',
-        controller: 'MainCtrl'
+        controller: 'AssetsCtrl'
       })
       .otherwise({
         redirectTo: '/'
       });
   }).run(function (commentConfig) {
-    commentConfig
-        .setForumName("mdsdemo")
-        .setProvider('disqus');
-  })
-;
+    commentConfig.setForumName('mdsdemo').setProvider('disqus');
+  });

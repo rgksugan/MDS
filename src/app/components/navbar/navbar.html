@@ -7,43 +7,43 @@
                 <span>Home</span>
             </a>
         </li>
-        <li title="Project Overview">
+        <li title="Project Overview" ng-hide="currentPage === '#/'">
             <a ng-href="#/project/{{currentProject}}">
                 <img src="/assets/images/overview.png" alt="">
                 <span>Overview</span>
             </a>
         </li>
-        <li title="User Personas">
+        <li title="User Personas" ng-hide="currentPage === '#/'">
             <a ng-href="#/project/{{currentProject}}/personas">
                 <img src="/assets/images/persona.png" alt="">
                 <span>Personas</span>
             </a>
         </li>
-        <li title="Information Architecture">
+        <li title="Information Architecture" ng-hide="currentPage === '#/'">
             <a ng-href="#/project/{{currentProject}}/information-architecture">
                 <img src="/assets/images/infoarchitecture.png" alt="">
                 <span>Architecture</span>
             </a>
         </li>
-        <li title="Wireframes">
+        <li title="Wireframes" ng-hide="currentPage === '#/'">
             <a ng-href="#/project/{{currentProject}}/wireframes">
                 <img src="/assets/images/wireframes.png" alt="">
                 <span>Wireframes</span>
             </a>
         </li>
-        <li title="Visual Designs">
+        <li title="Visual Designs" ng-hide="currentPage === '#/'">
             <a ng-href="#/project/{{currentProject}}/visual-designs">
                 <img src="/assets/images/designs.png" alt="">
                 <span>Visuals</span>
             </a>
         </li>
-        <li title="Style Guide">
+        <li title="Style Guide" ng-hide="currentPage === '#/'">
             <a ng-href="#/project/{{currentProject}}/style-guide">
                 <img src="/assets/images/rules.png" alt="">
-                <span>Styles</span>
+                <span>Style Guide</span>
             </a>
         </li>
-        <li title="Assets">
+        <li title="Assets" ng-hide="currentPage === '#/'">
             <a ng-href="#/project/{{currentProject}}/assets">
                 <img src="/assets/images/assets.png" alt="">
                 <span>Assets</span>

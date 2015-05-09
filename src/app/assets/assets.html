@@ -1,3 +1,12 @@
-<div class="jumbotron text-center">
-  <h1>Assets</h1>
+<div class="architecture-wrap">
+  <div class="title-wrap">
+    <p class="page-title">Assets</p>
+    <p class="project-title float-right">{{project.name}}</p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2" ng-repeat="file in files track by $index">
+      {{file}}
+    </div>
+  </div>
 </div>

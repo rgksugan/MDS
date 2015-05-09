@@ -1,3 +1,24 @@
-<div class="jumbotron text-center">
-  <h1>Style Guide</h1>
+<div class="architecture-wrap">
+  <div class="title-wrap row">
+    <p class="page-title">Style Guide</p>
+    <p class="project-title float-right">{{project.name}}</p>
+  </div>
+
+  <div class="row">
+    <h3>Color Palette</h3>
+    <div class="row">
+      <div class="col-md-4" ng-repeat="color in colors track by $index">
+        {{color.code}}
+        {{color.description}}
+      </div>
+    </div>
+    <h3>Fonts</h3>
+    <div class="row">
+      <div class="col-md-4" ng-repeat="font in fonts track by $index">
+        {{font.name}}
+        {{font.size}}
+        {{font.description}}
+      </div>
+    </div>
+  </div>
 </div>

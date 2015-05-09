@@ -1,36 +1,62 @@
 <div class="persona-wrap">
 	<div class="title-wrap">
 		<p class="page-title">User Persona</p>
-		<p class="project-title float-right">Project Name</p>
+		<p class="project-title float-right">{{project.name}}</p>
 	</div>
-	<div class="user-persona-wrap">
-		<img src="/assets/images/home.png" alt=""/>
-		<p class="user-name">Name</p>
+
+	<div ng-repeat="persona in project.personas track by $index">
+		<div class="user-persona-wrap row clearfix">
+			<h2>Personal</h2>
+			<div class="col-md-8">
+				<img src="/assets/images/home.png" alt=""/>
+				<div class="name">{{persona.name}}</div>
+				<div class="age">{{persona.age}} year old {{persona.gender}}</div>
+			</div>
+			<div class="col-md-4">
+				<div class="row">
+					<div class="col-md-6 title">Nationality</div>
+					<div class="col-md-6 value">{{persona.nationality}}</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 title">Highest Education</div>
+					<div class="col-md-6 value">{{persona.highest_education}}</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 title">Work Experience</div>
+					<div class="col-md-6 value">{{persona.work_experience}}</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 title">Professional Background</div>
+					<div class="col-md-6 value">{{persona.professional_background}}</div>
+				</div>
+			</div>
+		</div>
+		<h2>Usage</h2>
+		<div class="row user-persona-data">
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-sm-8 title">Devices Used</div>
+					<div class="col-sm-4 value">{{persona.devices_used}}</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-sm-8 title">Time Spend per Usage</div>
+					<div class="col-sm-4 value">{{persona.time_spend}}</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-sm-8 title">How Often</div>
+					<div class="col-sm-4 value">{{persona.how_often}}</div>
+				</div>
+			</div>
+		</div>
+		<div class="row description">
+			<div class="col-md-12">
+				<p>{{persona.description}}</p>
+			</div>
+		</div>
 	</div>
-	<div class="row user-persona-data">
-		<div class="col-sm-6">
-			<div class="row">
-				<div class="col-sm-8">Age</div>
-				<div class="col-sm-4">36</div>
-			</div>
-		</div>
-		<div class="col-sm-6">
-			<div class="row">
-				<div class="col-sm-8">Age</div>
-				<div class="col-sm-4">36</div>
-			</div>
-		</div>
-		<div class="col-sm-6">
-			<div class="row">
-				<div class="col-sm-8">Age</div>
-				<div class="col-sm-4">36</div>
-			</div>
-		</div>
-		<div class="col-sm-6">
-			<div class="row">
-				<div class="col-sm-8">Age</div>
-				<div class="col-sm-4">36</div>
-			</div>
-		</div>
-	</div>
+ 	<div comments="project"></div>
 </div>
