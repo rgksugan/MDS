@@ -25,9 +25,11 @@
 
 <div class="team row">
   <h3>Team</h3>
-  <div class="col-md-4" ng-repeat="user in project.user track by $index">
-    <img src=""/>
-    <div class="name">{{user.name}}</div>
-    <div class="designation">{{user.designation}}</div>
+  <div class="col-md-4 team-members" ng-repeat="user in project.user track by $index">
+    <img src="assets/images/TeamMemberImage.png"/>
+    <div class="team-data-container">
+      <div class="name">{{user.name}}</div>
+      <div class="designation">{{user.designation}}</div>
+    </div>
   </div>
 </div>
